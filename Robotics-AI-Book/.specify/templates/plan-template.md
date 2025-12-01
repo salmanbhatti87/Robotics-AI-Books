@@ -31,7 +31,12 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] **I. Library-First:** Is the feature designed as a standalone library?
+- [ ] **II. CLI Interface:** Does the library expose its functionality via a CLI?
+- [ ] **III. Test-First (NON-NEGOTIABLE):** Are tests written before the implementation?
+- [ ] **IV. Integration Testing:** Are integration tests included for all new contracts and inter-service communication?
+- [ ] **V. Observability:** Does the feature include structured logging?
+- [ ] **VI. Versioning & Breaking Changes:** Does the feature follow semantic versioning?
 
 ## Project Structure
 
