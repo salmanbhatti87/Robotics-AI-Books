@@ -5,6 +5,8 @@
 **Status**: Draft  
 **Input**: User description: "$ARGUMENTS"
 
+**Note**: When writing this specification, ensure that it aligns with the project constitution found in `.specify/memory/constitution.md`. Key principles to consider are Accuracy, Modularity, Consistency, Docs-as-Code, Interactivity, and Security.
+
 ## User Scenarios & Testing *(mandatory)*
 
 <!--

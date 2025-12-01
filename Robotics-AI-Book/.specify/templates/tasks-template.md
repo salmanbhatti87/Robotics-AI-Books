@@ -5,6 +5,8 @@ description: "Task list template for feature implementation"
 
 # Tasks: [FEATURE NAME]
 
+**Note**: When creating tasks, ensure that they align with the project constitution found in `.specify/memory/constitution.md`. Key principles to consider are Accuracy, Modularity, Consistency, Docs-as-Code, Interactivity, and Security.
+
 **Input**: Design documents from `/specs/[###-feature-name]/`
 **Prerequisites**: plan.md (required), spec.md (required for user stories), research.md, data-model.md, contracts/
 
@@ -156,8 +158,6 @@ Examples of foundational tasks (adjust based on your project):
 - [ ] TXXX [P] Additional unit tests (if requested) in tests/unit/
 - [ ] TXXX Security hardening
 - [ ] TXXX Run quickstart.md validation
-- [ ] TXXX Add/update structured logging for observability
-- [ ] TXXX Verify semantic versioning for all components
 
 ---
 

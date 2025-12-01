@@ -31,12 +31,12 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-- [ ] **I. Library-First:** Is the feature designed as a standalone library?
-- [ ] **II. CLI Interface:** Does the library expose its functionality via a CLI?
-- [ ] **III. Test-First (NON-NEGOTIABLE):** Are tests written before the implementation?
-- [ ] **IV. Integration Testing:** Are integration tests included for all new contracts and inter-service communication?
-- [ ] **V. Observability:** Does the feature include structured logging?
-- [ ] **VI. Versioning & Breaking Changes:** Does the feature follow semantic versioning?
+- [ ] **Accuracy and Clarity**: Is the technical content accurate and clearly described?
+- [ ] **Modularity**: Is the feature designed as a self-contained module with clear learning outcomes?
+- [ ] **Consistency**: Does the plan adhere to established formatting, naming, and unit conventions?
+- [ ] **Docs-as-Code**: Is the documentation (spec, plan, etc.) managed in Markdown within the repo?
+- [ ] **Interactivity**: Are interactive examples (code, simulations) considered as part of the feature?
+- [ ] **Security**: Does the plan avoid storing credentials and include `.gemini/` in `.gitignore`?
 
 ## Project Structure
 

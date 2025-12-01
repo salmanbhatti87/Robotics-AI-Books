@@ -1,53 +1,76 @@
 <!--
 ---
-version_change: "0.0.0 -> 1.0.0"
-modified_principles: []
-added_sections:
-  - "Core Principles"
-  - "Additional Constraints"
-  - "Development Workflow"
-  - "Governance"
-removed_sections: []
-templates_updated:
-  - "`.specify/templates/plan-template.md` (pending)"
-  - "`.specify/templates/spec-template.md` (pending)"
-  - "`.specify/templates/tasks-template.md` (pending)"
-follow_up_todos:
-  - "TODO(RATIFICATION_DATE): Please provide the date this constitution was initially ratified."
+Sync Impact Report
 ---
+Version Change: None → 1.0.0
+Modified Principles: None
+Added Sections:
+- I. Accuracy and Clarity
+- II. Modularity
+- III. Consistency
+- IV. Docs-as-Code
+- V. Interactivity
+- VI. Security
+- Content and Structure
+- Development and Tooling
+- Governance
+Removed Sections: None
+Templates Requiring Updates:
+- ✅ .specify/templates/plan-template.md
+- ✅ .specify/templates/spec-template.md
+- ✅ .specify/templates/tasks-template.md
+Follow-up TODOs: None
 -->
-# Robotics AI Book Constitution
+# Physical AI & Humanoid Robotics Book Constitution
 
 ## Core Principles
 
-### I. Library-First
-Every feature starts as a standalone library. Libraries must be self-contained, independently testable, and have a clear purpose.
+### I. Accuracy and Clarity
+All technical content must be accurate, clear, and rigorously fact-checked.
 
-### II. CLI Interface
-Every library exposes functionality via a CLI. The interface should follow a text-in/text-out protocol (stdin/args -> stdout, stderr for errors) and support both JSON and human-readable formats.
+### II. Modularity
+Content must be organized into modular, self-contained modules, each with defined learning outcomes, diagrams, and practical exercises.
 
-### III. Test-First (NON-NEGOTIABLE)
-TDD is mandatory. The Red-Green-Refactor cycle is strictly enforced.
+### III. Consistency
+Strict consistency in formatting, naming conventions, and units of measurement must be maintained across all content.
 
-### IV. Integration Testing
-Integration tests are required for new library contracts, contract changes, inter-service communication, and shared schemas.
+### IV. Docs-as-Code
+The entire book will be managed using a docs-as-code approach. Source files must be in Markdown, managed in a GitHub repository, and prepared for deployment with Docusaurus.
 
-### V. Observability
-All components must provide structured logging for debuggability.
+### V. Interactivity
+Incorporate interactive examples wherever possible, including executable code snippets, simulations, and prompts for Retrieval-Augmented Generation (RAG) chatbots.
 
-### VI. Versioning & Breaking Changes
-All components must follow `MAJOR.MINOR.PATCH` semantic versioning.
+### VI. Security
+No sensitive credentials, API keys, or secrets are to be committed to the repository. The `.gemini/` directory and any environment files must be included in `.gitignore`.
 
-## Additional Constraints
+## Content and Structure
 
-[SECTION_2_CONTENT]
+**Modules:**
+1.  Robotic Nervous System (ROS 2) - Nodes, Topics, Services, rclpy, URDF
+2.  Digital Twin (Gazebo & Unity) - Physics simulation, sensor simulation, rendering
+3.  AI-Robot Brain (NVIDIA Isaac) - Isaac Sim, Isaac ROS, VSLAM, Nav2
+4.  Vision-Language-Action (VLA) - GPT integration, Whisper voice commands, cognitive planning
 
-## Development Workflow
+**Assessments:**
+- ROS 2 package project
+- Gazebo simulation
+- Isaac perception pipeline
+- Capstone humanoid robot project
 
-[SECTION_3_CONTENT]
+## Development and Tooling
+
+**Hardware Requirements:**
+- Digital Twin Workstation with RTX GPU
+- Edge AI Kit (Jetson Orin + sensors)
+- Optional humanoid robots
+
+**Tooling:**
+- Markdown for content
+- GitHub for version control
+- Docusaurus for deployment
 
 ## Governance
 
-All PRs/reviews must verify compliance with this constitution. Complexity must be justified.
+All contributions must adhere to these principles. Changes to the constitution require a pull request and approval from the project lead. A migration plan is needed for significant changes.
 
 **Version**: 1.0.0 | **Ratified**: 2025-12-01 | **Last Amended**: 2025-12-01
